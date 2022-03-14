@@ -1,10 +1,8 @@
 package ej04;
 
-public class ejercicio04 {
+public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
 		Circunferencia circunferencia1 = createCircunferencia(2);
 		
 		try {
