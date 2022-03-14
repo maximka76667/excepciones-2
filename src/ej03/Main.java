@@ -32,8 +32,7 @@ public class Main {
 		try {
 			encendido.establecerFranjaHorariaA(hora_encendido, hora_apagado);
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
-			e.printStackTrace();
+			handleError(e);
 		}
 	}
 
@@ -41,9 +40,13 @@ public class Main {
 		try {
 			encendido.establecerFranjaHorariaB(hora_encendido, hora_apagado);
 		} catch (Exception e) {
-			System.out.println(e.getMessage());
-			e.printStackTrace();
+			handleError(e);
 		}
+	}
+
+	public static void handleError(Exception e) {
+		System.out.println(e.getMessage());
+		e.printStackTrace();
 	}
 
 }
